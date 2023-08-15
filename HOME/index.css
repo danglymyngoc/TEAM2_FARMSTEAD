@@ -6,3 +6,212 @@
     font-family: 'Source Sans 3', sans-serif;
     font-family: 'Volkhov', serif;
 }
+
+/* FARMCAROUSEL */
+
+.FarmCarousel p, .FarmCarousel h5{
+    font-family:   'Source Sans Pro', sans-serif;
+}
+
+.FarmCarousel .carousel-inner{
+    background-image: url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/bg1.jpg);
+    height: 500px;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.FarmCarousel .carousel-inner::before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.418);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+.FarmCarousel__img img{
+    border-radius: 50%;
+    width: 15vh;
+}
+.FarmCarousel__right i{
+    color: #fb811e;
+    font-size: 1.3rem;
+}
+.FarmCarousel__right p{
+    text-indent: 30px;
+    font-size: 1.5rem;
+    font-weight: 100;
+    /* line-height: 2.5rem; */
+    /* padding-right: 12rem;
+    padding-left: 2rem; */
+}
+.FarmCarousel .carousel-indicators{
+    padding-bottom: 4rem;
+}
+
+@media screen and (max-width: 1000px){
+    .FarmCarousel .carousel-indicators{
+    padding-bottom: 0;
+}
+@media screen and (max-width: 1000px){
+    .FarmCarousel__right p{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 1000px){
+    .carousel-item{
+        margin-top: 0;
+    }
+}
+}
+.FarmCarousel .carousel-indicators li{
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 0 .3rem;
+    z-index: 10;
+}
+.FarmCarousel .carousel-indicators li:hover{
+    background-color: #fb811e;
+}
+.FarmCarousel .carousel-indicators li.active{
+    background-color: #fb811e;
+}
+
+/* FOOTER */
+footer{
+    margin: 4rem 0;
+    letter-spacing: .5px;
+
+}
+footer input::placeholder{
+    font-family:   'Source Sans Pro', sans-serif;
+    color: rgba(128, 128, 128, 0.87);
+    font-size: 1rem;
+
+}
+footer li, footer p, footer span{
+    font-family:   'Source Sans Pro', sans-serif;
+}
+footer li{
+    list-style-type: none;
+    color: grey;
+}
+footer span{
+    transition: .5s;
+}
+footer span:hover{
+    color: #fb811e;
+    cursor: pointer;
+}
+.footer__find *{
+    padding-bottom: 1rem;
+}
+.footer__logo{
+    color: #fb811e;
+    transition: .5s;
+
+}
+.footer__logo:hover{
+    color: black;
+    cursor: pointer;
+}
+.footer__logo i{
+    position: absolute;
+    top: -0.5rem;
+    left: 4rem;
+    font-size: 1.2rem;
+}
+.footer__logo h3{
+    position: relative;
+}
+.footer__copy span{
+    color: green;
+}
+
+.footer__input input{
+    border: none;
+    width: 80%;
+    height: 3rem;
+    background-color: rgba(128, 128, 128, 0.103);
+    padding: 1rem;
+    border-radius: 2rem 0 0 2rem;
+    outline: none;
+}
+.footer__input button{
+    background-color: rgba(0, 128, 0, 0.548);
+    border: none;
+    width: 20%;
+    border-radius: 0 2rem 2rem 0;
+}
+
+.footer__icon i{
+    width: 2rem;
+    height: 2rem;
+    background-color: rgba(0, 128, 0, 0.057);
+    color: green;
+    border-radius: 50%;
+    line-height: 2rem;
+    text-align: center;
+    font-size: .8rem;
+    margin-right: .3rem;
+    transition: .5s;
+}
+.footer__icon i:hover{
+    color: #fb811e;
+    background-color: #fb811e0e;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    cursor: pointer;
+}
+
+/* BACK TO TOP */
+.backToTop{
+    position: absolute;
+    right: 0;
+    top: 20%;
+    
+}
+.backToTop__above{
+    flex-direction: column;
+    border-radius: 5px 0 0 5px;
+    background: #000;
+    width: 90px;
+    height: 300px;
+    color: gray;
+    text-align: center;
+    position: relative;
+    
+}
+.backToTop__hover{
+    transition: .5s;
+}
+.backToTop__hover:hover{
+    color: white;
+    cursor: pointer;
+}
+#border{
+    border-bottom: 1px solid gray;
+}
+.backToTop__below i{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    left: 30px;
+    font-size: 14px;
+}
+
+.cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .cd-top--fade-out { 
+    
+    opacity: 0;
+  }
+
